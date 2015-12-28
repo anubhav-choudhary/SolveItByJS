@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pre-filled Form Problem</title>
+    <link rel="stylesheet" href="../res/css/bootstrap.min.css">
+  </head>
+  <body>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-12'>
+				<h1>Registartion Form</h1>	
+			<div>
+		</div>
+		<hr/>
+		<div class='row'>
+			<div class='col-md-12'>
+				<form role="form" method="POST" action="someAction.php">
+					<div class="form-group">
+                            			<label>Name</label>
+						<input class="form-control" name="name" id="name" type="text" />
+                        		</div>
+					<div class="form-group">
+                            			<label>Date of Birth</label>
+						<input class="form-control" name="dob" id="dob" type="date" />
+                        		</div>
+					<div class="form-group">
+                            			<label>Gender</label><br/>
+						<input name="gender" id="gender" type="radio" /> Male
+						<input name="gender" id="gender" type="radio" /> Female
+                        		</div>
+					<div class="form-group">
+                            			<label>Country</label>
+						<select class="form-control" name="country" id="country">
+							<option value='NA'>Select One</option>
+							<option value='IN'>India</option>
+							<option value='NP'>Nepal</option>
+							<option value='PK'>Pakistan</option>
+							<option value='BH'>Bhutan</option>
+							<option value='BG'>Bangladesh</option>
+							<option value='SL'>Sri Lanka</option>
+						</select>
+                        		</div>
+					<div class='row'>
+						<div class='col-md-2 col-md-push-5'>
+							<div class="form-group">
+		                    				<input type='submit' Value='Register' class='btn btn-success'> <input type='reset' Value='Reset' class='btn btn-primary'>
+							</div>			
+						</div>
+                        		</div>
+				</form>
+			<div>
+		</div>
+	</div>
+  </boby>
+  <!-- JavaScript Libraries -->
+  <script src="../res/js/jquery.js"></script>
+  <script src="../res/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</html>
